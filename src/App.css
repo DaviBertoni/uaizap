@@ -1,0 +1,74 @@
+/* Estilos gerais */
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh; /* Isso garante que o conteúdo preencha a altura da janela */
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Estilos das mensagens */
+.message-list {
+  flex-grow: 1;
+  overflow-y: scroll; /* Use 'scroll' em vez de 'auto' */
+  padding: 10px;
+  background-color: #3b3333;
+  max-height: 600px; /* Defina uma altura máxima para a caixa de mensagens */
+  margin-bottom: 80px; /* Ajuste o margin-bottom conforme necessário */
+}
+
+.message {
+  background-color: #33d900;
+  padding: 10px;
+  margin: 10px;
+  color: #000000;
+  margin: 10px;
+  border-radius: 5px;
+  display: block;
+  max-width: 70%;
+}
+
+.message.left {
+  text-align: left;
+  margin-right: auto; /* Empurra a mensagem para a esquerda */
+}
+
+.message.right {
+  text-align: left;
+  background-color: #33d900;
+  color: #000000;
+  margin-left: auto; /* Empurra a mensagem para a direita */
+}
+
+/* Estilos do formulário de entrada de mensagens */
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #242020;
+  position: absolute;
+  bottom: -3px; /* Ajuste o valor de 'bottom' para mover o formulário mais para baixo */
+  left: 0;
+  right: 0;
+}
+
+/* Estilos gerais */
+body {
+  margin: 0;
+  overflow: hidden; /* Isso oculta a barra de rolagem */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh; /* Isso garante que o conteúdo preencha a altura da janela */
+}
